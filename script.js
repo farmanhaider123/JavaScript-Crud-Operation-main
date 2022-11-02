@@ -3,6 +3,7 @@ var count=1;
 function onFormSubmit(e) {
 	event.preventDefault();
         var formData = readFormData();
+        
        var inp=document.getElementById("productCode").value;
         if (inp==""){
             alert("Plaese Enter Task");
@@ -10,6 +11,7 @@ function onFormSubmit(e) {
         else if (inp!=null && selectedRow==null){
            
             insertNewRecord(formData);
+             Count++;
 		}
         else{
             updateRecord(formData);
