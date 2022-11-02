@@ -10,6 +10,7 @@ function onFormSubmit(e) {
         else if (inp!=null && selectedRow==null){
            
             insertNewRecord(formData);
+count++;
 		}
         else{
             updateRecord(formData);
